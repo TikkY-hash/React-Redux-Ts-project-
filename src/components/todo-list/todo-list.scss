@@ -1,0 +1,11 @@
+.list {
+  .list__complete {
+    padding-top: 1em;
+    .list__item__complete {
+      list-style: none;
+      padding-bottom: 3%;
+      border-bottom: 1px dashed #6372C7;
+      margin-bottom: 3%;
+    }
+  }
+}

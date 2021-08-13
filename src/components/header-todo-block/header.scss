@@ -1,0 +1,12 @@
+@import "src/styles/header-style";
+
+.header {
+  @include headerBlock(#6372C7)
+}
+
+.header__complete {
+  @include headerBlock(rgb(28, 35, 77))
+}
+
+
+

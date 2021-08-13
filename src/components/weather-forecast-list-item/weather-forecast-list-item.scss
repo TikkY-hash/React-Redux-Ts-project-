@@ -1,0 +1,37 @@
+.weather__forecast_information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-bottom: 5%;
+  h3 {
+    color: #6372C7;
+  }
+  .weather__forecast_week {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .bread {
+    color: grey;
+  }
+  .weather__forecast_position {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    i {
+      color: #6372C7;
+      font-size: 25px;
+    }
+  }
+}
+
+@media (max-width : 454px) {
+  .weather__forecast_week {
+    font-size: 18px !important;
+  }
+  .weather__forecast_position {
+    top : 2px !important;
+  }
+}

@@ -1,0 +1,44 @@
+.weather__city_information {
+  margin-top: 2em;
+  .weather__city_name {
+    font-size: 23px;
+    color: #6372C7;
+    font-weight: bold;
+  }
+  .weather__city_time {
+    color: #6372C7;
+    font-size: 18px;
+  }
+}
+
+.temp__information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 0px 2em 0px;
+  h1 {
+    color: #6372C7;
+    font-size: 28px;
+  }
+  i {
+    color: #6372C7;
+    font-size: 45px;
+  }
+}
+
+.fa-wind {
+  color: #6372C7;
+}
+
+.weather__city_wind {
+  color: #6372C7;
+}
+
+.fa-tint {
+  color: #6372C7;
+}
+
+.weather__current_block {
+  padding-bottom: 5%;
+  border-bottom: 2px solid #6372C7;
+}

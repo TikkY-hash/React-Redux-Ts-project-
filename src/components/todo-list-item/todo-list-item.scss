@@ -1,0 +1,16 @@
+@import "src/styles/todo-items-styles";
+
+.todo__form__active {
+  @include todo-items-styles(#6372C7,rgb( 55, 70, 153))
+}
+
+.todo__form__active {
+  @include todo-items-styles(#6372C7,rgb( 55, 70, 153))
+}
+
+.todo__form__passive {
+  @include todo-items-styles(rgb(28, 35, 77),#6372C7)
+}
+
+
+

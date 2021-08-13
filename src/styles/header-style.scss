@@ -1,0 +1,14 @@
+@import "text-style";
+
+@mixin headerBlock ($color) {
+    .text__style {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 7%;
+        border-bottom: 3px solid $color;
+        h3 {
+         @include headerTextStyle($color)
+        }
+    }
+}
+

@@ -1,0 +1,18 @@
+.weather__input_position {
+  text-align: center;
+  .weather__input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #6372C7;
+    padding-bottom: 5px;
+    outline: none;
+    caret-color :  #6372C7;
+    color: #6372C7;
+   &::placeholder {
+     color: #6372C7;
+     font-family: 'Montserrat', sans-serif,'Font Awesome 5 Free';
+     font-weight: 900;
+   }
+  }
+}

@@ -1,0 +1,68 @@
+@import "text-style";
+
+@mixin stylesBackground() {
+  transition: 0.9s;
+  background: none;
+}
+
+@mixin stylesOutline() {
+  border: none;
+  outline: none;
+}
+
+@mixin inputStyle($color) {
+  @include stylesOutline();
+  @include headerTextStyle($color);
+  @include stylesBackground();
+  width: 100%;
+}
+
+@mixin todo-items-styles($colorFirstButton,$colorSecondButton) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    button {
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+      margin-right: 4px;
+    }
+
+    .input__position {
+      display: flex;
+    }
+
+    &.hide {
+      .bi-bookmark-plus {
+        fill: $colorFirstButton;
+        transition: 0.9s;
+      }
+      .bi-x-lg {
+        visibility: hidden;
+        opacity: 0;
+        fill: $colorFirstButton;
+        transition: 0.9s;
+      }
+      .input__value {
+        @include inputStyle($colorFirstButton)
+      }
+    }
+
+    &.visible {
+      .bi-bookmark-plus {
+        fill: $colorSecondButton;
+        transition: 0.9s;
+      }
+      .bi-x-lg {
+        visibility: visible;
+        opacity: 1;
+        fill: $colorSecondButton;
+        transition: 0.9s;
+      }
+      .input__value {
+        @include inputStyle($colorSecondButton)
+      }
+    }
+}
